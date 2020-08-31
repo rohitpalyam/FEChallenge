@@ -9,8 +9,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  cd fechallenge
 
 # Install dependencies
-npm install
-npm run build -- --prod
+`npm install`
+
+`npm run build -- --prod`
 
 ## Development server
 To run the microservice, download and install [Deno](https://deno.land/).
