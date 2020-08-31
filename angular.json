@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "clientApp": {
+    "fechallenge": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/clientApp",
+            "outputPath": "dist/fechallenge",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -66,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "clientApp:build"
+            "browserTarget": "fechallenge:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "clientApp:build:production"
+              "browserTarget": "fechallenge:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "clientApp:build"
+            "browserTarget": "fechallenge:build"
           }
         },
         "test": {
@@ -114,15 +115,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "clientApp:serve"
+            "devServerTarget": "fechallenge:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "clientApp:serve:production"
+              "devServerTarget": "fechallenge:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "clientApp"
+    }
+  },
+  "defaultProject": "fechallenge",
+  "cli": {
+    "analytics": "f0efec46-7bba-4a76-a302-3d47970ec5aa"
+  }
 }
