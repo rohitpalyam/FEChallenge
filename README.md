@@ -2,10 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
-## Development server
+## QuickStart
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-To run the microservice, download and install Deno and run the following command in this file path fechallenge/denoServices from the command line: `deno run --allow-net --allow-read server.ts`
+`git clone https://github.com/rohitpalyam/fechallenge.git`
+ 
+ cd fechallenge
+
+# Install dependencies
+npm install
+npm run build -- --prod
+
+## Development server
+To run the microservice, download and install [Deno](https://deno.land/).
+
+# Run application in development
+cd denoServices
+run the following command `deno run --allow-net --allow-read server.ts`
 
 ## Code scaffolding
 
